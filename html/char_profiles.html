@@ -1,0 +1,58 @@
+
+<!-- 角色檔案 各角色立繪(每角色一張圖)橫向排列，點擊各角色會在下方彈出該角色更多圖+文字介紹 -->
+<div class="page_title">角色檔案</div>
+<div class="gallery-wrapper">
+    <div id="char-menu-bar"></div>
+    <div id="char-detail-panel">
+        <div class="detail-name-bar" id="target-name">請選擇角色</div>
+        <div class="detail-body">
+            <div class="detail-left-column">
+                <div class="main-preview-container">
+                    <img src="" alt="立繪" class="main-preview-img" id="target-main-img">
+                </div>
+                <div class="thumb-scroll-bar" id="target-thumbs"></div>
+            </div>
+            <div class="detail-right-column">
+                <h3 class="info-title" id="target-title">標題</h3>
+                <div class="info-intro" id="target-intro">內容簡介</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function() {
+    const charL = [
+        {name:"MAN", img:[//角色姓名/圖片及相關說明
+            { title: "立繪", url: "./img/Man.png", imgIntro: [//單圖圖片名稱/圖片來源
+                {title:"姓名",content:"MAN" },//各行說明標題/內文
+                {title:"出場章節",content:"故事一 第一章" },
+                {title:"生日",content:"2022/??/??" },
+                {title:"身高",content:"15cm" },
+                {title:"種族",content:"火柴人" },
+                {title:"職業",content:"漁夫" },
+                {title:"",content:"色美良人怨遙夜豈，河門少城到日人間。蕭蕭才雲端侯殘，黃鶴樓頭上還傳如，行人外共冥冥知來還，琵琶珊瑚，不覺，烽火人黃晚浮雲。<br><br>金雲在天難為此別為我相，酒與望。露羌笛彈無飲新昏誰水晶簾，深林白雲七馬至尊不盡⋯萬江水雲出門落千里怨遙夜，江春歸來青，相見平明，秋無虛細駐馬夜煙舊業五。兵風塵窗琵傳苦玉門，秋月萬相鳥溪空臺⋯空蒼蒼，山無人收重，門淚千秋水聽茫萬里美南，黃葉消。翻疑夢色何時雲山，何時去時客當時：月低故人新上青天依舊，夜塞稀水中十年一，平生長安城，眠羅衣夜有。靜上尋常輪臺城，黃生珊瑚萬處下鐵衣⋯自有千情水秋風臨⋯停塵五石鼓一主⋯飛庭荊陰陰，相逢心上落花五月何，華淒淒時秋一人南遲如斜之難以，隨流水雖千不成知，初無人收流水別淚如雨。人南山迢迢遙八月⋯手。<br><br>秦迢迢天涯萬里，原太芙蓉王珠⋯難萬里五更斯。<br><br>行不相見。在歸客辭家木日千里如有時：青山路難⋯人北斗人家何時⋯山漢家梁金太何如知黃，罷使今絕頂將軍足氣。五漢家不亦如此故關動⋯天長地然聲⋯何所霓裳煙塵白日，塵孤不見中鳳吾楊柳春，不見月照風迴故人花今見陵，清無消息其孤人未來。自瑟今死生羅飛多病漢家，中空天地雲識住堪夜，無人水識春風蕭至今本一杯，風沙場聞道帶五月明客有憶昔春風，胡天日暮冥空五小明能有佳人，日美人玉門關婦自浮雲散。" }
+                    ]
+                },
+            { title: "BANANA", url: "./img/PhotoCate.png", imgIntro: [//第二張單圖圖片名稱/圖片來源
+                {title:"恩",content:"貓貓" }//各行說明標題/內文
+                ] 
+                }
+            ]
+        },
+        {name:"WOMAN", img:[
+            { title: "立繪", url: "./img/Woman.png", imgIntro: [
+                {title:"姓名",content:"WOMAN" }
+                    ] 
+                },
+            { title: "BANANA1", url: "./img/PhotoCate.png", imgIntro: [
+                {title:"恩",content:"貓貓" }
+                    ] 
+                }
+            ]
+        }
+    ];
+    profile(charL); 
+})();
+</script>
